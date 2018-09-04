@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="app.test.avenger.com.avengerapp.ui.AvengerDetailActivity">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tbToolbar"
+        android:layout_width="match_parent"
+        app:contentInsetStartWithNavigation="0dp"
+        android:layout_height="?android:attr/actionBarSize">
+
+        <TextView
+            android:id="@+id/tvTbTitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="@dimen/_14sdp"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/ivAvenger"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_150sdp" />
+
+    <RatingBar
+        android:id="@+id/rbAvengerRating"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:numStars="3" />
+
+</LinearLayout>
